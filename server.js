@@ -21,6 +21,4 @@ app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
 // LISTEN
-app.listen(PORT, () => {
-  console.log('listening on port', PORT);
-})
+app.listen(process.env.PORT)
